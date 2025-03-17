@@ -1,0 +1,9 @@
+name: Build Raspberry Pi custom image
+
+on: [push]
+jobs:
+  build-rpi-custom-image:
+    runs-on: ubuntu-latest
+    steps:
+      - run: touch ./stage3/SKIP ./stage4/SKIP ./stage5/SKIP
+      - run: ./build.sh
