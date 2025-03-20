@@ -8,3 +8,4 @@ jobs:
       - uses: usimd/pi-gen-action@v1
         with:
           image-name: test
+          stage-list: stage0 stage1 stage2
