@@ -23,6 +23,7 @@ jobs:
           timezone: ${{ vars.TIMEZONE }}
           username: ${{ secrets.USERNAME }}
           verbose-output: ${{ vars.VERBOSE_OUTPUT }}
+          test-multiline-var: ${{ vars.MULTILINE_VAR }}
       - uses: actions/upload-artifact@v4
         with:
           name: rpi-image
