@@ -15,6 +15,7 @@ jobs:
           keyboard-layout: ${{ vars.KEYBOARD_LAYOUT }}
           locale: ${{ vars.LOCALE }}
           stage-list: stage0 stage1 stage2
+          timezone: ${{ vars.TIMEZONE }}
           username: ${{ vars.USERNAME }}
           verbose-output: true
       - uses: actions/upload-artifact@v4
