@@ -12,6 +12,7 @@ jobs:
           image-name: rpi-image
           increase-runner-disk-size: true
           stage-list: stage0 stage1 stage2
+          username: ${{ vars.USERNAME }}
           verbose-output: true
       - uses: actions/upload-artifact@v4
         with:
