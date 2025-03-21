@@ -15,6 +15,7 @@ jobs:
           keyboard-keymap: ${{ vars.KEYBOARD_KEYMAP }}
           keyboard-layout: ${{ vars.KEYBOARD_LAYOUT }}
           locale: ${{ vars.LOCALE }}
+          password: ${{ secrets.PASSWORD }}
           stage-list: stage0 stage1 stage2
           timezone: ${{ vars.TIMEZONE }}
           username: ${{ vars.USERNAME }}
