@@ -16,6 +16,7 @@ jobs:
           keyboard-layout: ${{ vars.KEYBOARD_LAYOUT }}
           locale: ${{ vars.LOCALE }}
           password: ${{ secrets.PASSWORD }}
+          pi-gen-version: ${{ vars.PI_GEN_VERSION }}
           pubkey-only-ssh: 1
           pubkey-ssh-first-user: ${{ secrets.PUBKEY_SSH_FIRST_USER }}
           stage-list: stage0 stage1 stage2
