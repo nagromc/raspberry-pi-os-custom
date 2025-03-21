@@ -9,7 +9,7 @@ jobs:
         id: build-rpi-image
         with:
           disable-first-boot-user-rename: 1
-          hostname: ${{ vars.HOSTNAME }}
+          hostname: ${{ secrets.HOSTNAME }}
           image-name: rpi-image
           increase-runner-disk-size: true
           keyboard-keymap: ${{ vars.KEYBOARD_KEYMAP }}
@@ -18,7 +18,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           stage-list: stage0 stage1 stage2
           timezone: ${{ vars.TIMEZONE }}
-          username: ${{ vars.USERNAME }}
+          username: ${{ secrets.USERNAME }}
           verbose-output: true
       - uses: actions/upload-artifact@v4
         with:
