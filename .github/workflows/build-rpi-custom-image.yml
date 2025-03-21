@@ -8,6 +8,7 @@ jobs:
       - uses: usimd/pi-gen-action@v1
         id: build-rpi-image
         with:
+          disable-first-boot-user-rename: 1
           hostname: ${{ vars.HOSTNAME }}
           image-name: rpi-image
           increase-runner-disk-size: true
