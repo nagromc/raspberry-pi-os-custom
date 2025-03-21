@@ -10,6 +10,7 @@ jobs:
           image-name: test
           stage-list: stage0 stage1 stage2
           increase-runner-disk-size: true
+          verbose-output: true
       - uses: actions/upload-artifact@v4
         with:
           name: rpi-image
