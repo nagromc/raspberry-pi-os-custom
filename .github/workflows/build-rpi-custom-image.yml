@@ -8,7 +8,7 @@ jobs:
       - uses: usimd/pi-gen-action@v1
         id: build-rpi-image
         with:
-          image-name: test
+          image-name: rpi-image
           stage-list: stage0 stage1 stage2
           increase-runner-disk-size: true
           verbose-output: true
