@@ -16,6 +16,7 @@ jobs:
           keyboard-layout: ${{ vars.KEYBOARD_LAYOUT }}
           locale: ${{ vars.LOCALE }}
           password: ${{ secrets.PASSWORD }}
+          pubkey-only-ssh: 1
           stage-list: stage0 stage1 stage2
           timezone: ${{ vars.TIMEZONE }}
           username: ${{ secrets.USERNAME }}
