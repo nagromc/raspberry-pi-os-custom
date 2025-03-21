@@ -9,6 +9,7 @@ jobs:
         id: build-rpi-image
         with:
           disable-first-boot-user-rename: 1
+          enable-ssh: 1
           hostname: ${{ secrets.HOSTNAME }}
           image-name: rpi-image
           increase-runner-disk-size: true
