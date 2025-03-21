@@ -12,6 +12,7 @@ jobs:
           image-name: rpi-image
           increase-runner-disk-size: true
           keyboard-keymap: ${{ vars.KEYBOARD_KEYMAP }}
+          keyboard-layout: ${{ vars.KEYBOARD_LAYOUT }}
           locale: ${{ vars.LOCALE }}
           stage-list: stage0 stage1 stage2
           username: ${{ vars.USERNAME }}
