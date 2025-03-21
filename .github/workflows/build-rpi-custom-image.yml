@@ -19,7 +19,7 @@ jobs:
           stage-list: stage0 stage1 stage2
           timezone: ${{ vars.TIMEZONE }}
           username: ${{ secrets.USERNAME }}
-          verbose-output: true
+          verbose-output: ${{ vars.VERBOSE_OUTPUT }}
       - uses: actions/upload-artifact@v4
         with:
           name: rpi-image
