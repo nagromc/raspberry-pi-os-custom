@@ -5,6 +5,10 @@ jobs:
   build-rpi-custom-image:
     runs-on: ubuntu-latest
     steps:
+      - name: var test
+        run: |
+          echo "env... $MY_ENV_VAR"
+          echo "var... $MY_CONF_VAR"
       - uses: usimd/pi-gen-action@v1
         id: build-rpi-image
         with:
