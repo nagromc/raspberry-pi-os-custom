@@ -11,6 +11,7 @@ jobs:
           hostname: ${{ vars.HOSTNAME }}
           image-name: rpi-image
           increase-runner-disk-size: true
+          locale: ${{ vars.LOCALE }}
           stage-list: stage0 stage1 stage2
           username: ${{ vars.USERNAME }}
           verbose-output: true
