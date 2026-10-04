@@ -12,7 +12,7 @@ jobs:
           enable-ssh: 1
           hostname: ${{ secrets.HOSTNAME }}
           image-name: rpi-image
-          increase-runner-disk-size: true
+          increase-runner-disk-size: false
           keyboard-keymap: ${{ vars.KEYBOARD_KEYMAP }}
           keyboard-layout: ${{ vars.KEYBOARD_LAYOUT }}
           locale: ${{ vars.LOCALE }}
